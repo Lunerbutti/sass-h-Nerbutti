@@ -1,0 +1,243 @@
+header {
+  animation-duration: 2s;
+  animation-name: correr;
+  animation-iteration-count: infinite;
+  margin: 0;
+  padding: 0; }
+  header div {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: #13031C;
+    background-color: #AB9FA0;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: right; }
+    header div img {
+      width: 100%; }
+
+@keyframes correr {
+  0% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -15px; }
+  70% {
+    margin-left: -21px; }
+  100% {
+    margin-left: 0px; } }
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "h1 img" "h2 img"; }
+
+.imgHHome {
+  grid-area: img;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.menwear {
+  grid-area: h2;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.Heredero {
+  grid-area: h1;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.banner {
+  width: 100%;
+  height: 250px; }
+
+@media screen and (min-width: 768px) {
+  header div {
+    font-weight: 700; } }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0; }
+  nav li {
+    display: inline-flexbox;
+    transition: all .3s; }
+
+.navhome {
+  background-color: "$color-primary";
+  color: #f0f8ff; }
+
+nav-pages {
+  background-color: "$color-primary";
+  color: #f0f8ff;
+  position: sticky; }
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly; }
+  .navpages li {
+    display: inline; } }
+
+@media screen and (min-width: 1024px) {
+  nav li:hover {
+    transform: scale(1, 1.5); }
+  .navpages li:hover {
+    transform: scale(1.5, 2); } }
+
+.contactenos {
+  justify-content: end;
+  width: 250px;
+  margin: 0;
+  display: flex;
+  color: #f0f8ff;
+  font-size: 50;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.mapa {
+  height: 100%;
+  width: 100%; }
+
+footer {
+  padding: 0;
+  margin: 0;
+  background-image: url(../imagenes/imagen4.PNG);
+  color: #e6dde5da; }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    justify-content: space-evenly;
+    flex-wrap: nowrap; }
+  .mapa {
+    height: 350px;
+    width: 400px; } }
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    justify-content: space-evenly;
+    flex-wrap: nowrap; }
+  .mapa {
+    height: 350px;
+    width: 500px; }
+  .botonTrabaja {
+    transition: all .3s; }
+  .botonTrabaja:hover {
+    transform: scale(1.5, 1.1);
+    font-size: 20px;
+    height: 5px;
+    width: 15px; } }
+
+main {
+  background-image: url("../imagenes/fondo body.jpg");
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0; }
+  main iframe {
+    width: 100%; }
+
+.suscripcion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  height: 110px;
+  color: #f2f9f9ea;
+  font-size: 20px;
+  margin: 0; }
+  .suscripcion form {
+    color: #f0f8ff; }
+
+table {
+  background-color: #ab9fa0ce;
+  font-size: 25px;
+  margin-left: 1%;
+  border: 2 solid;
+  table-layout: fixed;
+  padding: 3px; }
+  table th {
+    padding: 2px;
+    align-items: center; }
+
+tbody tr:nth-child(odd) {
+  background-color: #a9aed8; }
+
+tbody tr:nth-child(even) {
+  background-color: #0c500a8e; }
+
+.fila1 {
+  background-color: #02101ea7;
+  color: #f0f8ff;
+  text-decoration: underline; }
+
+.productos {
+  display: inline-flex;
+  color: #f0f8ff;
+  font-size: 30; }
+  .productos img {
+    height: 100px;
+    width: 150px; }
+
+.precios {
+  display: flex;
+  flex-direction: column; }
+
+.precioAntes {
+  color: #ff0000;
+  text-decoration: line-through; }
+
+.textoHistoria {
+  background-image: url(../imagenes/fondotexto.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #13031C;
+  transition: all .2s; }
+
+@media screen and (min-width: 768px) {
+  table {
+    font-size: 50px;
+    margin-left: 100px;
+    padding: 10px;
+    border: 3px solid; }
+  .contactenos {
+    margin-left: 250px; }
+  .productos img {
+    height: 200px;
+    width: 300px;
+    transition: all .3s; }
+  .bodyhome {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "menu video" "menu texto"; }
+  .textoHistoria {
+    grid-area: texto; }
+  .video {
+    grid-area: video;
+    transition: all .3s; }
+  .navhome {
+    grid-area: menu;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap; } }
+
+@media screen and (min-width: 1024px) {
+  .contactenos {
+    margin-left: 380px; }
+  table {
+    margin-left: 250px; }
+  .productos img:hover {
+    transform: scale(1.1, 1.5);
+    transform: translate(50px 10px); }
+  .textoHistoria:hover {
+    transform: scale(1, 1.5);
+    color: #030d16; }
+  .video:hover {
+    transform: scale(1, 1.2); } }

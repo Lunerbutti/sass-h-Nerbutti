@@ -1,0 +1,44 @@
+nav { 
+    display: flex;
+    justify-content: space-evenly;
+    margin: $margin;
+    padding: $padding;
+ 
+    li{
+    display: inline-flexbox;
+    transition: all .3s;}
+}
+.navhome{
+    background-color: "$color-primary";
+    color: #f0f8ff  ;
+}
+
+nav-pages{
+    background-color: "$color-primary"; 
+    color: #f0f8ff  ;
+    position: sticky;
+}
+
+@media screen and (min-width: 768px){
+nav { 
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+
+.navpages li{
+    display: inline;
+}
+}
+
+@media screen and (min-width: 1024px){
+    nav{ 
+    li:hover{
+        transform: scale(1, 1.5) ;
+    }
+    }
+
+    .navpages li:hover{
+        transform: scale(1.5, 2);       
+    }
+}

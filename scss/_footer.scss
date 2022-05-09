@@ -1,0 +1,58 @@
+
+.contactenos{
+    justify-content: end;
+     width: 250px;
+     margin: $margin;
+     display: flex;
+     color: #f0f8ff;
+     font-size: 50;
+     flex-wrap: wrap;
+     flex-direction: column;
+     
+ }
+.mapa{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    padding: $padding;
+    margin: $margin;
+    background-image: url(../imagenes/imagen4.PNG);
+   
+    color: #e6dde5da;
+   
+
+}
+
+@media screen and (min-width: 768px){
+    .footer {
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .mapa{
+        height: 350px;
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .footer {
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .mapa{
+        height: 350px;
+        width: 500px;
+    }
+    .botonTrabaja{
+        transition: all .3s;
+    }
+    .botonTrabaja:hover{
+       
+        transform: scale(1.5, 1.1);
+        font-size: 20px;
+        
+        height: 5px;
+        width: 15px;
+    } 
+}

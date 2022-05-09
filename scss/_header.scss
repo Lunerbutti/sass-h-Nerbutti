@@ -1,0 +1,71 @@
+header{
+    animation-duration: 2s;
+    animation-name: correr;
+    animation-iteration-count: infinite;
+    margin: $margin;
+    padding: $padding;
+    
+    div{ 
+        display: flex;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        color: #13031C;
+        background-color: #AB9FA0;
+        flex-wrap: nowrap;
+        height: 100%;
+        justify-content: right;
+        img{
+            width: 100%;
+        }
+    }
+    
+}
+@keyframes correr{
+    0% { margin-left: 0px}
+    30% { margin-left: -15px;}
+    70% { margin-left: -21px;}
+    100% { margin-left: 0px;}
+
+
+}
+
+.gridHeader{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "h1 img"
+    "h2 img";
+}
+.imgHHome{
+    grid-area: img;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+  
+}
+.menwear{
+    grid-area: h2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.Heredero{
+    grid-area: h1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.banner {
+    width: 100%;
+    height: 250px;  
+}
+
+@media screen and (min-width: 768px){
+    header{
+        div{
+            font-weight: 700;}
+    }
+
+}
+    

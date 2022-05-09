@@ -1,0 +1,169 @@
+main {
+    background-image: $img-primary;
+    background-attachment: fixed;
+    padding: $padding;
+    margin: $margin;
+    iframe {
+        width: 100%;
+    }
+
+}
+
+.suscripcion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: 110px;
+    color: #f2f9f9ea;
+    font-size: 20px;
+    margin: $margin;
+
+    form{
+        color: #f0f8ff;
+    }
+    
+
+}
+
+
+// tabla
+table{   
+    background-color: #ab9fa0ce;
+    font-size: 25px;
+    margin-left: 1%;
+    border: 2 solid;
+    table-layout: fixed;
+    padding: 3px;
+    th{
+        padding: 2px;
+        align-items: center;
+    }
+ }
+ tbody tr:nth-child(odd) {
+    background-color: #a9aed8;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #0c500a8e;
+  }
+  
+   
+ .fila1{
+     background-color: #02101ea7;
+     color: #f0f8ff;
+     text-decoration: underline;
+ 
+ }
+
+
+//  fotos de productos
+ .productos{
+    display: inline-flex;
+    color: #f0f8ff;
+    font-size: 30;
+    
+    img{
+        height: 100px;
+        width: 150px;
+        }
+    
+}
+.precios{
+    display: flex;
+    flex-direction: column;
+
+}
+.precioAntes{
+    color: #ff0000;
+    text-decoration: line-through;
+    
+}
+
+ 
+ .textoHistoria{
+     background-image: url(../imagenes/fondotexto.png);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 300;
+     color: $color-primary;
+     transition: all .2s;
+     
+ }
+
+ @media screen and (min-width: 768px){
+    table{     
+        font-size: 50px;
+        margin-left: 100px;
+        padding: 10px;
+        border: 3px solid;
+    }
+    .contactenos{
+        margin-left: 250px;
+    }
+    .productos img{
+        height: 200px;
+        width: 300px;
+        transition: all .3s;
+    }
+
+    .bodyhome{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "menu video"
+        "menu texto"
+        ;
+    }
+    .textoHistoria{
+        grid-area: texto;
+
+    }
+    .video{
+        grid-area: video;
+        transition: all .3s;
+    }
+    .navhome{
+        grid-area: menu;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+    }
+
+ }
+ @media screen and (min-width: 1024px){
+    .contactenos{
+        margin-left: 380px;
+    }
+    table{
+        margin-left: 250px;
+    }
+    .productos img:hover{
+        transform: scale(1.1, 1.5);
+        transform: translate(50px 10px);
+
+    }
+    .textoHistoria:hover{ 
+        transform: scale(1, 1.5);
+
+        color: #030d16;
+
+    }
+    .video:hover{
+        transform: scale(1, 1.2);
+    }
+}
+
+
+
+
+
+
+
