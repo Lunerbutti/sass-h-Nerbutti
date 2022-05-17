@@ -59,14 +59,22 @@ table{
 
 
 //  fotos de productos
+
+//minin
+@mixin sizeprod ($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+    
+}
+
  .productos{
     display: inline-flex;
     color: #f0f8ff;
     font-size: 30;
     
     img{
-        height: 100px;
-        width: 150px;
+        @include sizeprod(100px, 150px )
+        
         }
     
 }

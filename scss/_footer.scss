@@ -25,6 +25,50 @@ footer{
 
 }
 
+
+// Maps 
+
+$redes: (
+    twitter: #339fe2,
+    facebook: #1c1cf4,
+    instagam: #5d1d85,
+    whatsapp: #07aa20,
+);
+
+@each $red, $color in $redes{
+    .red-#{$red}{
+        background-color: $color;
+    }
+}
+
+
+// extend
+
+.icono-redes{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.red-twitter{
+    @extend .icono-redes;
+    
+}
+.red-facebook{
+    @extend .icono-redes;
+    
+}
+.red-instagram{
+    @extend .icono-redes;
+    
+}
+.red-whatsapp{
+    @extend .icono-redes;
+    
+}
+
+
+
 @media screen and (min-width: 768px){
     .footer {
         justify-content: space-evenly;
@@ -33,6 +77,13 @@ footer{
     .mapa{
         height: 350px;
         width: 400px;
+    }
+    .icono{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-evenly;
+
     }
 }
 @media screen and (min-width: 1024px){
@@ -56,3 +107,5 @@ footer{
         width: 15px;
     } 
 }
+
+
