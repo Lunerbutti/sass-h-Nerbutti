@@ -11,10 +11,13 @@
      
  }
 .mapa{
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
+.nuestras-redes{
+    margin-top: 40px;
+}
 footer{
     padding: $padding;
     margin: $margin;
@@ -84,6 +87,9 @@ $redes: (
         
         justify-content: space-evenly;
 
+    }
+    .nuestras-redes{
+        margin-top: 0px;
     }
 }
 @media screen and (min-width: 1024px){
